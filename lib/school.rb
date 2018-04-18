@@ -8,9 +8,9 @@ class School
     @roster[grade] = [] if !@roster.has_key? grade
     @roster[grade] << name
   end
-  def roster
-    @roster
+  def grade(number)
+    @roster[number]
   end
 end
 
-binding.pry
+#binding.pry
