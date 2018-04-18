@@ -18,6 +18,7 @@ class School
     @roster.collect do |key, value|
       value.sort
     end
+    @roster
   end
 end
 
