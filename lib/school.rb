@@ -1,3 +1,4 @@
+require 'pry'
 class School
   def initialize(name)
     @name = name
@@ -8,3 +9,5 @@ class School
     @roster[grade] << name
   end
 end
+
+binding.pry
