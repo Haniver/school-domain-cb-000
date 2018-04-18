@@ -8,6 +8,9 @@ class School
     @roster[grade] = [] if !@roster.has_key? grade
     @roster[grade] << name
   end
+  def roster
+    @roster
+  end
   def grade(number)
     @roster[number]
   end
