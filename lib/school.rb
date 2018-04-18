@@ -15,8 +15,8 @@ class School
     @roster[number]
   end
   def sort
-    @roster.collect do |key, value|
-      value.sort
+    @roster.each do |key, value|
+      value.sort!
     end
     @roster
   end
