@@ -14,6 +14,11 @@ class School
   def grade(number)
     @roster[number]
   end
+  def sort
+    @roster.collect do |key, value|
+      value.sort
+    end
+  end
 end
 
 #binding.pry
